@@ -44,12 +44,6 @@ class ProcessZipCodeFile extends Command
             }
         }
 
-        foreach ($sheetNames as $key => $sheetName) {
-            if ($key < 24) {
-                $sheetNames->forget($key);
-            }
-        }
-
         Excel::import(new ZipCodesImport($sheetNames), $filePath);
         return Command::SUCCESS;
     }
