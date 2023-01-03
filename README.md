@@ -41,6 +41,10 @@ cp .env.example .env
 ```
 ./vendor/bin/sail artisan key:generate
 ```
+- Ejecutamos las migraciones:
+```
+./vendor/bin/sail artisan migrate
+```
 - [Descargamos el Excel de la fuente de datos](https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx "Descargamos el Excel de la fuente de datos") y lo copiamos en la ruta `/storage/app/` con el nombre `CPdescarga.xls`. El archivo que utilicé fue [este](https://docs.google.com/spreadsheets/d/1WfHb4pxLSoeI_FjtbPAVnvoJemzu-VSg/edit?usp=share_link&ouid=101262177311718890593&rtpof=true&sd=true "este").
 - Desde la raíz del proyecto ejecutamos el comando que ingresará la información del Excel a la Base de Datos. Este proceso suele demorar unas horas. Si se desea, se puede descargar [el dump](https://drive.google.com/file/d/1q97Rrw-woc6D2S-FcxXeHkc49wQtxMlc/view?usp=share_link "el dump") que obtuve al finalizar este proceso.
 ```
