@@ -14,7 +14,7 @@
 ![](https://i.imgur.com/E5Stuy7.png)
 
 #### ¿Cómo hacer funcionar el proyecto en local?
-Prerequisitos Docker
+**Nota: Es necesario tener instalado Docker.**
 - Clonar el proyecto:
 ```
 git clone git@github.com:alejurian/technical-challenge-zip-codes.git
